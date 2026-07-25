@@ -6,6 +6,7 @@ excerpt: 旅行的意义不在目的地，而在移动本身。当你离开熟�
 category: travel
 tags: [旅行, 独处, 自我觉察, 个人成长]
 date: 2026-07-05
+relatedId: walking-toward-myself-en
 ---
 
 一个人旅行的时候，时间会变得不一样。

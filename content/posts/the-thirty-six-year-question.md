@@ -6,6 +6,7 @@ excerpt: 三十六岁，做了十二年地产财务，突然不知道下一站�
 category: personal-growth
 tags: [人生转折, 价值, 中年, 转型]
 date: 2026-07-03
+relatedId: the-thirty-six-year-question-en
 ---
 
 三十六岁那年，我从一个高速旋转了十二年的机器上走下来，忽然不知道该往哪里走。

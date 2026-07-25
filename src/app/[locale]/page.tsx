@@ -26,13 +26,14 @@ export default function HomePage({
   return (
     <div className="min-h-screen">
       <HeroSection locale={currentLocale} />
-      <div id="recent"><LatestPosts posts={allPosts} locale={currentLocale} /></div>
-      <section className="collection-shell">
+      <section className="collection-shell topic-entry">
         <div className="section-heading">
-          <span>{currentLocale === 'zh' ? '随笔' : 'ESSAYS'}</span>
+          <span>{currentLocale === 'zh' ? '按主题进入' : 'BROWSE BY THEME'}</span>
+          <span>{currentLocale === 'zh' ? '选择你想读的方向' : 'Choose a path'}</span>
         </div>
         <SectionCarousel sectionsWithPosts={sectionsWithPosts} locale={currentLocale} />
       </section>
+      <div id="recent"><LatestPosts posts={allPosts} locale={currentLocale} /></div>
 
       {/* Empty state */}
       {allPosts.length === 0 && (

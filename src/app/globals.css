@@ -1628,3 +1628,226 @@ a, button {
   .article-content img { margin-bottom: 2rem; }
   .article-end { margin-top: 50px; }
 }
+
+/* ===== Homepage clarity pass ===== */
+.site-locale-zh {
+  --font-zh-sans: 'Kaiti SC', 'STKaiti', 'KaiTi', 'LXGW WenKai Screen', 'Microsoft YaHei UI', 'PingFang SC', sans-serif;
+  --font-zh-reading: 'Kaiti SC', 'STKaiti', 'KaiTi', 'LXGW WenKai Screen', 'Songti SC', 'STSong', serif;
+}
+
+.site-locale-zh .masthead-title,
+.site-locale-zh .latest-row h2,
+.site-locale-zh .essay-index-name,
+.site-locale-zh .article-header h1,
+.site-locale-zh .article-content h2,
+.site-locale-zh .article-content h3 {
+  font-family: var(--font-zh-reading);
+  letter-spacing: .02em;
+}
+
+.masthead,
+.hero-shell {
+  min-height: 620px;
+}
+
+.hero-shell {
+  padding-bottom: 34px;
+  border-bottom: 0;
+}
+
+.masthead-enter {
+  margin-top: 34px;
+}
+
+.topic-entry {
+  padding: 28px 0 46px;
+}
+
+.topic-entry .section-heading,
+.latest-shell .section-heading {
+  min-height: auto;
+  padding: 0 0 18px;
+  border-bottom: 0;
+}
+
+.topic-entry .section-heading span:first-child,
+.latest-shell .section-heading span:first-child {
+  color: var(--ink);
+  font-family: var(--font-en);
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+
+.topic-entry .section-heading span:last-child,
+.latest-shell .section-heading span:last-child {
+  color: #7c8178;
+  font-size: .82rem;
+  font-weight: 400;
+  letter-spacing: .02em;
+}
+
+.essay-index {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  border: 0;
+}
+
+.essay-index-row {
+  min-height: 168px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid rgba(21,23,19,.13);
+  background: rgba(255,255,255,.28);
+}
+
+.essay-index-row:hover {
+  background: rgba(255,255,255,.52);
+  border-color: rgba(184,77,50,.42);
+  transform: translateY(-2px);
+}
+
+.essay-index-name {
+  color: var(--ink);
+  font-size: 1.65rem;
+  line-height: 1.2;
+}
+
+.essay-index-desc {
+  max-width: none;
+  color: #62675f;
+  font-size: .95rem;
+}
+
+.essay-index-count {
+  margin-top: auto;
+  color: var(--accent);
+  font-size: .78rem;
+}
+
+.essay-index-count::before {
+  content: '文章 ';
+  color: #8a8e86;
+}
+
+.site-locale-en .essay-index-count::before {
+  content: 'posts ';
+}
+
+.essay-index-arrow {
+  opacity: 1;
+  transform: none;
+}
+
+.latest-shell {
+  padding: 34px 0 90px;
+}
+
+.latest-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  border: 0;
+}
+
+.latest-row,
+.latest-row-featured {
+  min-height: 250px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: start;
+  border: 1px solid rgba(21,23,19,.12);
+  background: rgba(255,255,255,.3);
+}
+
+.latest-row-featured {
+  grid-column: span 2;
+  min-height: 300px;
+  padding: 32px;
+  background: rgba(255,255,255,.42);
+}
+
+.latest-row:hover {
+  background: rgba(255,255,255,.58);
+  border-color: rgba(184,77,50,.42);
+}
+
+.latest-row-main {
+  min-width: 0;
+  height: 100%;
+}
+
+.latest-row h2,
+.latest-row-featured h2 {
+  max-width: 760px;
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  line-height: 1.35;
+}
+
+.latest-row-featured h2 {
+  font-size: clamp(2rem, 3.4vw, 3.35rem);
+}
+
+.latest-row-excerpt {
+  max-width: 720px;
+  -webkit-line-clamp: 3;
+}
+
+.latest-row-arrow {
+  opacity: .8;
+  transform: none;
+}
+
+@media (max-width: 767px) {
+  .masthead,
+  .hero-shell {
+    min-height: auto;
+  }
+
+  .hero-shell {
+    padding-top: 74px;
+    padding-bottom: 36px;
+  }
+
+  .topic-entry {
+    padding: 18px 0 34px;
+  }
+
+  .topic-entry .section-heading,
+  .latest-shell .section-heading {
+    display: block;
+  }
+
+  .topic-entry .section-heading span,
+  .latest-shell .section-heading span {
+    display: block;
+  }
+
+  .topic-entry .section-heading span:last-child,
+  .latest-shell .section-heading span:last-child {
+    margin-top: 8px;
+  }
+
+  .essay-index,
+  .latest-list {
+    grid-template-columns: 1fr;
+  }
+
+  .essay-index-row {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .latest-row,
+  .latest-row-featured {
+    grid-column: auto;
+    min-height: auto;
+    padding: 20px;
+  }
+}

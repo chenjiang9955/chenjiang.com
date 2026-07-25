@@ -6,6 +6,7 @@ excerpt: 我们讨厌某种现状，却像中了邪一样一次次退缩回熟�
 category: buddhism
 tags: [惯性, 觉察, 循业发现, 破局, 人生选择]
 date: 2026-07-25
+relatedId: the-inertia-of-fate-en
 ---
 
 ![迷雾中的岔路口](/images/inertia-of-fate.png)
