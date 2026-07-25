@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    default: '内在漫游',
+    default: '陈江',
     template: '%s · 内在漫游',
   },
 }

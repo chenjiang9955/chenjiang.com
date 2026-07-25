@@ -3,7 +3,7 @@ import { sectionOrder, type Locale } from '@/i18n'
 import HeroSection from '@/components/HeroSection'
 import LatestPosts from '@/components/LatestPosts'
 import SectionCarousel from '@/components/SectionCarousel'
-import SubscribeForm from '@/components/SubscribeForm'
+import ContactPanel from '@/components/ContactPanel'
 
 export function generateStaticParams() {
   return [{ locale: 'zh' }, { locale: 'en' }]
@@ -24,18 +24,15 @@ export default function HomePage({
   }))
 
   return (
-    <div className="min-h-screen pb-16">
-      {/* Hero section */}
+    <div className="min-h-screen">
       <HeroSection locale={currentLocale} />
-
-      {/* Latest posts: horizontal strip */}
-      <LatestPosts posts={allPosts} locale={currentLocale} />
-
-      {/* Section carousel */}
-      <SectionCarousel
-        sectionsWithPosts={sectionsWithPosts}
-        locale={currentLocale}
-      />
+      <div id="recent"><LatestPosts posts={allPosts} locale={currentLocale} /></div>
+      <section className="collection-shell">
+        <div className="section-heading">
+          <span>{currentLocale === 'zh' ? '随笔' : 'ESSAYS'}</span>
+        </div>
+        <SectionCarousel sectionsWithPosts={sectionsWithPosts} locale={currentLocale} />
+      </section>
 
       {/* Empty state */}
       {allPosts.length === 0 && (
@@ -46,12 +43,7 @@ export default function HomePage({
         </div>
       )}
 
-      {/* Subscribe */}
-      {allPosts.length > 0 && (
-        <section className="max-w-md mx-auto px-6 mt-12">
-          <SubscribeForm locale={currentLocale} />
-        </section>
-      )}
+      <ContactPanel locale={currentLocale} />
     </div>
   )
 }

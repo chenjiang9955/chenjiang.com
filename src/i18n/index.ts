@@ -27,23 +27,23 @@ export const categorySlugs: Record<string, string> = {
 export type Section = 'travel' | 'depth' | 'daily'
 
 export const sectionNames: Record<Section, Record<Locale, string>> = {
-  travel: { zh: '🧭 旅行', en: '🧭 Travel' },
-  depth: { zh: '🌿 深度', en: '🌿 Depth' },
-  daily: { zh: '☕ 日常', en: '☕ Daily' },
+  travel: { zh: '行旅', en: 'Journey' },
+  depth: { zh: '观心', en: 'Contemplation' },
+  daily: { zh: '人间', en: 'Ordinary Life' },
 }
 
 export const sectionDescriptions: Record<Section, Record<Locale, string>> = {
   travel: {
-    zh: '路上的觉察与相遇',
-    en: 'Encounters and awareness on the road',
+    zh: '在行走中松开固有的自己',
+    en: 'Loosening the familiar self through movement',
   },
   depth: {
-    zh: '佛学、内在观察与跨学科思辨',
-    en: 'Buddhism, inner observation, and interdisciplinary reflections',
+    zh: '照见念头，也照见念头背后的执取',
+    en: 'Seeing thought, and the grasping beneath it',
   },
   daily: {
-    zh: '情感、成长与人生随笔',
-    en: 'Relationships, growth, and life essays',
+    zh: '在关系与日常里练习清醒',
+    en: 'Practising clarity in relationships and ordinary life',
   },
 }
 
