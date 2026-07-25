@@ -1,4 +1,4 @@
-import { getPostsBySection, getPostsByLocale } from '@/lib/posts'
+import { getHomepagePosts, getHomepagePostsBySection } from '@/lib/posts'
 import { sectionOrder, type Locale } from '@/i18n'
 import HeroSection from '@/components/HeroSection'
 import LatestPosts from '@/components/LatestPosts'
@@ -15,12 +15,12 @@ export default function HomePage({
   params: { locale: string }
 }) {
   const currentLocale = locale as Locale
-  const allPosts = getPostsByLocale(currentLocale)
+  const allPosts = getHomepagePosts(currentLocale)
 
   // Group posts by section
   const sectionsWithPosts = sectionOrder.map((section) => ({
     section,
-    posts: getPostsBySection(section, currentLocale),
+    posts: getHomepagePostsBySection(section, currentLocale),
   }))
 
   return (

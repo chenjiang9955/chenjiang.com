@@ -11,11 +11,15 @@ export const metadata: Metadata = {
 
 export default function LocaleLayout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode
+  params: { locale: string }
 }) {
+  const currentLocale = locale === 'en' ? 'en' : 'zh'
+
   return (
-    <div className="flex flex-col min-h-screen">
+    <div lang={currentLocale === 'zh' ? 'zh-CN' : 'en'} className={`site-locale-${currentLocale} flex flex-col min-h-screen`}>
       <NavBar />
       <main className="flex-1">{children}</main>
       <Footer />

@@ -131,3 +131,27 @@ export function resolveSection(post: Post): Section {
 export const getPostsBySection = cache((section: Section, locale: string): Post[] => {
   return getPostsByLocale(locale).filter(p => resolveSection(p) === section)
 })
+
+export const getHomepagePosts = cache((locale: string): Post[] => {
+  const localePosts = getPostsByLocale(locale)
+
+  if (locale === 'zh') return localePosts
+
+  const translatedSourceSlugs = new Set(
+    localePosts
+      .map(post => post.relatedId)
+      .filter((slug): slug is string => Boolean(slug))
+  )
+
+  const fallbackPosts = getAllPosts().filter(
+    post => post.locale === 'zh' && !translatedSourceSlugs.has(post.slug)
+  )
+
+  return [...localePosts, ...fallbackPosts].sort(
+    (a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime()
+  )
+})
+
+export const getHomepagePostsBySection = cache((section: Section, locale: string): Post[] => {
+  return getHomepagePosts(locale).filter(post => resolveSection(post) === section)
+})

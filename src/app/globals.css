@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 :root {
+  --font-en: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Inter', sans-serif;
+  --font-zh-sans: 'LXGW WenKai Screen', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
+  --font-zh-reading: 'LXGW WenKai Screen', 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'STSong', serif;
   --bg: #f1efe9;
   --bg-alt: #e7e4dc;
   --text-primary: #151713;
@@ -29,12 +32,41 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-family: var(--font-en);
   background: var(--bg);
   color: var(--text-body);
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.site-locale-zh {
+  font-family: var(--font-zh-sans);
+}
+
+.site-locale-en {
+  font-family: var(--font-en);
+}
+
+.site-locale-zh .masthead-title,
+.site-locale-zh .hero-title,
+.site-locale-zh .latest-row h2,
+.site-locale-zh .lead-content h2,
+.site-locale-zh .lead-content > p:not(.story-meta),
+.site-locale-zh .story-row h3,
+.site-locale-zh .article-header h1,
+.site-locale-zh .article-header > p,
+.site-locale-zh .article-content,
+.site-locale-zh .article-content h2,
+.site-locale-zh .article-content h3 {
+  font-family: var(--font-zh-reading);
+  letter-spacing: 0;
+}
+
+.site-locale-en .masthead-title,
+.site-locale-en .latest-row h2 {
+  font-family: var(--font-en);
+  letter-spacing: 0;
 }
 
 body::before {
@@ -796,6 +828,12 @@ body::before {
   font-weight: 500;
   letter-spacing: .1em;
   text-transform: uppercase;
+}
+.latest-row-origin {
+  color: #8a8e86;
+  font-weight: 400;
+  letter-spacing: .04em;
+  text-transform: none;
 }
 .latest-row h2 {
   margin: 0;

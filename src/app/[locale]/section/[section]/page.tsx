@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { format } from 'date-fns'
 import { zhCN, enUS } from 'date-fns/locale'
-import { getPostsBySection, resolveSection } from '@/lib/posts'
+import { getHomepagePostsBySection } from '@/lib/posts'
 import { sectionNames, sectionDescriptions, sectionOrder, type Locale, type Section } from '@/i18n'
 
 export function generateStaticParams() {
@@ -21,7 +21,7 @@ export default function SectionPage({
 }) {
   const currentLocale = locale as Locale
   const currentSection = section as Section
-  const posts = getPostsBySection(currentSection, currentLocale)
+  const posts = getHomepagePostsBySection(currentSection, currentLocale)
   const dateLocale = currentLocale === 'zh' ? zhCN : enUS
   const dateFmt = currentLocale === 'zh' ? 'yyyy年M月d日' : 'MMM d, yyyy'
 
@@ -60,7 +60,7 @@ export default function SectionPage({
           {posts.map((post, index) => (
             <Link
               key={post.slug + post.locale}
-              href={`/${currentLocale}/blog/${post.slug}`}
+              href={`/${post.locale}/blog/${post.slug}`}
               className="group block py-5 border-b border-neutral-200 last:border-b-0
                          hover:bg-neutral-50 -mx-3 px-3 rounded transition-colors"
             >
@@ -68,6 +68,11 @@ export default function SectionPage({
                 <div className="flex-1 min-w-0">
                   <span className="text-xs text-neutral-400 mb-1.5 block">
                     {format(new Date(post.date), dateFmt, { locale: dateLocale })}
+                    {post.locale !== currentLocale && (
+                      <span className="ml-2">
+                        {currentLocale === 'zh' ? '英文版本' : 'Chinese original'}
+                      </span>
+                    )}
                   </span>
 
                   <h2 className="text-lg font-semibold text-neutral-900 mb-1.5

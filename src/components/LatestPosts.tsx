@@ -9,6 +9,7 @@ export default function LatestPosts({ posts, locale }: { posts: Post[]; locale: 
   const dateLocale = locale === 'zh' ? zhCN : enUS
   const dateFmt = locale === 'zh' ? 'yyyy.MM.dd' : 'MMM dd, yyyy'
   const readLabel = locale === 'zh' ? '分钟' : 'min'
+
   return (
     <section className="latest-shell">
       <div className="section-heading">
@@ -19,7 +20,7 @@ export default function LatestPosts({ posts, locale }: { posts: Post[]; locale: 
         {posts.slice(0, 5).map((post, i) => (
           <Link
             key={post.slug}
-            href={`/${locale}/blog/${post.slug}`}
+            href={`/${post.locale}/blog/${post.slug}`}
             className={`latest-row${i === 0 ? ' latest-row-featured' : ''}`}
           >
             <div className="latest-row-main">
@@ -28,6 +29,11 @@ export default function LatestPosts({ posts, locale }: { posts: Post[]; locale: 
                   ? (locale === 'zh' ? '精选 · ' : 'FEATURED · ') +
                     (categoryNames[post.category]?.[locale] || post.category)
                   : categoryNames[post.category]?.[locale] || post.category}
+                {post.locale !== locale && (
+                  <span className="latest-row-origin">
+                    {locale === 'zh' ? ' · 英文版本' : ' · Chinese original'}
+                  </span>
+                )}
               </span>
               <h2>{post.title}</h2>
               {post.excerpt && <p className="latest-row-excerpt">{post.excerpt}</p>}
