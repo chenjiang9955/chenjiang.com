@@ -1,25 +1,49 @@
+import Link from 'next/link'
+import { ArrowDown } from 'lucide-react'
 import { type Locale } from '@/i18n'
 
-interface Props {
-  locale: Locale
-}
-
-export default function HeroSection({ locale }: Props) {
+export default function HeroSection({ locale }: { locale: Locale }) {
   const isZh = locale === 'zh'
 
   return (
-    <section className="text-center pt-16 pb-10 md:pt-24 md:pb-14">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-neutral-900 tracking-tight">
-        {isZh ? '陈江' : 'Jiang Chen'}
-      </h1>
-      <h2 className="mt-3 text-lg md:text-xl font-normal text-neutral-500 tracking-wide">
-        {isZh ? '内在漫游' : 'Inner Wandering'}
-      </h2>
-      <p className="mt-4 text-sm text-neutral-400 max-w-md mx-auto leading-relaxed">
-        {isZh
-          ? '在思想的旷野里漫步，在觉察的微光中清醒。'
-          : 'Wandering the wilderness of thought, awakening in the glimmer of awareness.'}
-      </p>
+    <section className="hero-shell masthead">
+      <div className="masthead-rule" />
+      <div className="masthead-grid">
+        <div className="masthead-aside">
+          <span className="masthead-kicker">{isZh ? '陈江' : 'CHEN JIANG'}</span>
+          <span className="masthead-kicker muted">{isZh ? '内在漫游' : 'INNER WANDERING'}</span>
+        </div>
+
+        <div className="masthead-main">
+          <p className="masthead-lead">
+            {isZh
+              ? '在念头起落之间，我学着把看见的写下来。'
+              : 'Between arising and passing thoughts, I try to write what I see.'}
+          </p>
+          <h1 className="masthead-title">
+            {isZh ? (
+              <>
+                不忙着回答，<br />
+                只练习看得更清一点。
+              </>
+            ) : (
+              <>
+                Not in a hurry to answer —<br />
+                only to see a little more clearly.
+              </>
+            )}
+          </h1>
+          <p className="masthead-note">
+            {isZh
+              ? '这里收着关于佛学、内在观察、情感与旅途的文字。写给自己，也写给同样在觉察的人。'
+              : 'Notes on Buddhism, inner observation, love, and the road — written for myself, and for anyone else paying attention.'}
+          </p>
+          <Link href="#recent" className="masthead-enter">
+            {isZh ? '最近写的' : 'Recent writing'}
+            <ArrowDown size={15} />
+          </Link>
+        </div>
+      </div>
     </section>
   )
 }

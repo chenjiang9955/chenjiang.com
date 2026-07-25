@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { format } from 'date-fns'
 import { zhCN, enUS } from 'date-fns/locale'
-import { categoryNames, type Locale, type Section } from '@/i18n'
+import { type Locale, type Section } from '@/i18n'
 import type { Post } from '@/lib/posts'
 
 interface Props {
@@ -29,20 +29,7 @@ export default function StickyNote({ post, locale }: Props) {
         {post.title}
       </h3>
 
-      {/* Excerpt */}
-      <p className="text-sm text-neutral-500 leading-relaxed line-clamp-2 mb-3">
-        {post.excerpt}
-      </p>
-
-      {/* Bottom: tags + reading time */}
-      <div className="flex items-center justify-between pt-3 border-t border-neutral-100">
-        <div className="flex flex-wrap gap-1.5">
-          {post.tags.slice(0, 3).map(tag => (
-            <span key={tag} className="text-[0.65rem] text-neutral-400">
-              #{tag}
-            </span>
-          ))}
-        </div>
+      <div className="flex items-center justify-end mt-auto pt-3 border-t border-neutral-100">
         <span className="text-[0.65rem] text-neutral-400 whitespace-nowrap">
           {post.readingTime}{locale === 'zh' ? '分钟' : 'min'}
         </span>

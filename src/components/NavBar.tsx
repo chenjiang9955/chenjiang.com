@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Search, Menu, X } from 'lucide-react'
+import { Search, Menu, X, Circle } from 'lucide-react'
 import { useState } from 'react'
 import { type Locale } from '@/i18n'
 
@@ -25,14 +25,15 @@ export default function NavBar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-cream-50/85 backdrop-blur-xl">
-      <nav className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
+    <header className="site-header">
+      <nav className="site-nav">
         {/* Logo */}
         <Link
           href={`/${currentLocale}`}
-          className="text-base font-medium text-neutral-900 tracking-tight hover:text-accent-500 transition-colors"
+          className="brand-mark"
         >
-          {currentLocale === 'zh' ? '内在漫游' : 'Inner Wandering'}
+          <Circle size={9} fill="currentColor" />
+          <span>{currentLocale === 'zh' ? '内在漫游' : 'INNER WANDERING'}</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -48,9 +49,9 @@ export default function NavBar() {
             {t.home}
           </Link>
           <Link
-            href="/about"
+            href={`/${currentLocale}/about`}
             className={`text-sm font-medium transition-colors ${
-              isActive('/about')
+              isActive(`/${currentLocale}/about`)
                 ? 'text-neutral-900'
                 : 'text-neutral-400 hover:text-neutral-700'
             }`}
@@ -128,7 +129,7 @@ export default function NavBar() {
               {t.home}
             </Link>
             <Link
-              href="/about"
+            href={`/${currentLocale}/about`}
               onClick={() => setMobileOpen(false)}
               className="text-sm font-medium text-neutral-800"
             >

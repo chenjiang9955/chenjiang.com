@@ -85,8 +85,8 @@ export default function TableOfContents({ content, locale }: Props) {
     <>
       {/* Desktop sidebar */}
       <aside className="toc-sidebar hidden lg:block w-56 flex-shrink-0">
-        <div className="toc-container bg-neutral-50 rounded border border-neutral-200 p-4">
-          <h4 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-3 pb-2 border-b border-neutral-200">
+        <div className="toc-container">
+          <h4>
             {title}
           </h4>
           <nav>
@@ -109,20 +109,18 @@ export default function TableOfContents({ content, locale }: Props) {
       <div className="toc-mobile-toggle lg:hidden mb-6">
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="flex items-center gap-2 text-sm text-neutral-600 hover:text-neutral-800
-                     bg-neutral-100 px-4 py-2 rounded border border-neutral-200
-                     transition-all duration-200"
+          className="toc-mobile-button"
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="3" y1="6" x2="21" y2="6" />
             <line x1="3" y1="12" x2="15" y2="12" />
             <line x1="3" y1="18" x2="21" y2="18" />
           </svg>
-          {title} {mobileOpen ? '▲' : '▼'}
+          {title} <span>{mobileOpen ? '收起' : '展开'}</span>
         </button>
 
         {mobileOpen && (
-          <nav className="mt-3 p-4 bg-neutral-50 rounded border border-neutral-200">
+          <nav className="toc-mobile-panel">
             {headings.map((h) => (
               <button
                 key={h.id}
