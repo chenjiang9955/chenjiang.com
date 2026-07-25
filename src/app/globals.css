@@ -73,6 +73,16 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.article-content img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
 .article-content blockquote {
   border-left: 3px solid var(--accent);
   padding: 0.5rem 1.25rem;
@@ -194,6 +204,8 @@ a, button {
 
 .toc-link {
   display: block;
+  width: 100%;
+  text-align: left;
   padding: 0.2rem 0;
   font-size: 0.85rem;
   color: var(--text-tertiary);
@@ -201,6 +213,11 @@ a, button {
   border-left: 2px solid transparent;
   padding-left: 0.75rem;
   transition: all 0.2s ease;
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  cursor: pointer;
 }
 
 .toc-link:hover {
