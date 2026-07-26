@@ -2252,3 +2252,126 @@ body,
   .article-reading-panel .article-content h2 { grid-template-columns: 30px minmax(0, 1fr); gap: 8px; }
   .article-content p:has(> img) { aspect-ratio: 16 / 9; }
 }
+
+/* ===== Simplified section view and persistent reading navigation ===== */
+.site-locale-zh .masthead-title {
+  font-family: var(--font-zh-sans) !important;
+  font-weight: 700 !important;
+  letter-spacing: .01em !important;
+}
+
+.section-page {
+  --section-image: none;
+  min-height: 0;
+  padding: 54px 0 80px;
+  background: transparent;
+}
+
+.section-page-travel { --section-image: url('/images/theme-journey.jpg'); }
+.section-page-depth { --section-image: url('/images/theme-contemplation.jpg'); }
+.section-page-daily { --section-image: url('/images/theme-ordinary-life.jpg'); }
+
+.section-page::before { display: none; }
+
+.section-page-back {
+  margin-bottom: 24px;
+  padding-bottom: 0;
+  border: 0;
+}
+
+.section-page-header {
+  position: relative;
+  min-height: 178px;
+  margin-bottom: 34px;
+  padding: 30px 34px;
+  overflow: hidden;
+  border: 0;
+  border-bottom: 1px solid rgba(21,23,19,.18);
+  background: rgba(247,245,239,.48);
+}
+
+.section-page-header::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  content: '';
+  background-image: var(--section-image);
+  background-position: center 54%;
+  background-size: cover;
+  filter: saturate(.52) contrast(.86);
+  opacity: .14;
+}
+
+.section-page-header::after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 34px;
+  width: 44px;
+  height: 2px;
+  content: '';
+  background: var(--accent);
+}
+
+.section-page-header > * { position: relative; z-index: 1; }
+
+.section-page-title {
+  margin: 28px 0 8px !important;
+  font-size: 2.35rem !important;
+}
+
+.section-page-list {
+  border: 0;
+  background: transparent;
+}
+
+.section-page-post {
+  padding: 26px 58px 26px 0 !important;
+  border-top: 1px solid rgba(21,23,19,.16) !important;
+  border-bottom: 0 !important;
+  background: transparent !important;
+}
+
+.section-page-post:last-child { border-bottom: 1px solid rgba(21,23,19,.16) !important; }
+.section-page-post:hover { background: rgba(247,245,239,.4) !important; }
+.section-post-arrow { right: 4px; }
+.section-page-count { margin-top: 26px !important; }
+
+.article-reading-panel .article-content h2 {
+  position: relative;
+  padding-top: 1.5rem;
+  border-top: 0;
+}
+
+.article-reading-panel .article-content h2::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 2px;
+  content: '';
+  background: var(--accent);
+}
+
+.toc-sidebar {
+  position: sticky !important;
+  top: 28px;
+  align-self: start;
+  height: fit-content;
+  max-height: calc(100vh - 56px);
+  overflow-y: auto;
+}
+
+.toc-container {
+  position: static !important;
+  max-height: none;
+  overflow: visible;
+}
+
+@media (max-width: 767px) {
+  .section-page { padding: 38px 0 62px; }
+  .section-page-header { min-height: 154px; padding: 24px 22px; }
+  .section-page-header::after { left: 22px; }
+  .section-page-title { margin-top: 25px !important; font-size: 2rem !important; }
+  .section-page-post { padding: 22px 38px 22px 0 !important; }
+}
