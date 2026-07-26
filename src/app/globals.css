@@ -1629,6 +1629,160 @@ a, button {
   .article-end { margin-top: 50px; }
 }
 
+/* ===== Quiet paper and image treatment ===== */
+.site-locale-zh {
+  --font-zh-sans: 'Songti SC', 'STSong', 'SimSun', 'Noto Serif CJK SC', serif;
+  --font-zh-reading: 'Songti SC', 'STSong', 'SimSun', 'Noto Serif CJK SC', serif;
+}
+
+body,
+.min-h-screen {
+  background: #f7f5ef;
+}
+
+.site-locale-zh .masthead-title,
+.site-locale-zh .latest-row h2,
+.site-locale-zh .essay-index-name,
+.site-locale-zh .article-header h1,
+.site-locale-zh .article-content h2,
+.site-locale-zh .article-content h3 {
+  letter-spacing: 0;
+}
+
+.essay-index-row {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #eeece5;
+}
+
+.essay-index-image,
+.essay-index-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.essay-index-image {
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+  filter: saturate(.55) contrast(.86) brightness(1.14);
+  transform: scale(1.02);
+  transition: transform .5s ease, filter .5s ease;
+}
+
+.essay-index-travel .essay-index-image { background-image: url('/images/theme-journey.jpg'); }
+.essay-index-depth .essay-index-image { background-image: url('/images/theme-contemplation.jpg'); }
+.essay-index-daily .essay-index-image { background-image: url('/images/theme-ordinary-life.jpg'); }
+
+.essay-index-overlay {
+  z-index: -1;
+  background: rgba(247,245,239,.76);
+  transition: background .35s ease;
+}
+
+.essay-index-content {
+  position: relative;
+  z-index: 1;
+  min-height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.essay-index-row:hover .essay-index-overlay { background: rgba(247,245,239,.58); }
+.essay-index-row:hover .essay-index-image {
+  filter: saturate(.65) contrast(.86) brightness(1.1);
+  transform: scale(1.06);
+}
+
+.latest-row-featured {
+  grid-template-columns: minmax(0, 1.28fr) minmax(230px, .72fr) auto;
+}
+
+.latest-row-featured .latest-row-main { grid-column: 1; }
+
+.latest-row-media {
+  display: block;
+  grid-column: 2;
+  align-self: stretch;
+  min-height: 220px;
+  background: url('/images/inertia-of-fate.jpg') center / cover no-repeat;
+  filter: saturate(.62) contrast(.9) brightness(1.06);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 11%, #000 89%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 11%, #000 89%, transparent 100%);
+}
+
+.latest-row-featured .latest-row-arrow { grid-column: 3; }
+
+.article-layout { align-items: start; }
+
+.toc-container {
+  padding: 18px 18px 20px;
+  border-top: 2px solid rgba(184,77,50,.58);
+  border-left: 1px solid rgba(21,23,19,.14);
+  background: rgba(236,233,222,.56);
+}
+
+.article-reading-panel {
+  padding-left: 40px;
+  border-left: 1px solid rgba(21,23,19,.12);
+}
+
+.article-content p:has(> img) {
+  margin: 0 0 2.8rem;
+}
+
+.article-content img {
+  filter: saturate(.72) contrast(.92) brightness(1.04);
+  box-shadow: 0 12px 28px rgba(65,55,37,.12);
+  mask-image: linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%);
+}
+
+.article-content h2 + p,
+.article-content h3 + p {
+  margin-top: 1.45em;
+  padding: .7rem 0 .7rem 1rem;
+  border-left: 2px solid rgba(184,77,50,.55);
+  background: rgba(239,235,223,.46);
+}
+
+.article-content p + p {
+  position: relative;
+}
+
+.article-content p + p::before {
+  content: '';
+  position: absolute;
+  top: .88em;
+  left: -18px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(184,77,50,.62);
+}
+
+@media (max-width: 1023px) {
+  .article-reading-panel {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .latest-row-featured { grid-template-columns: 1fr auto; }
+  .latest-row-media { display: none; }
+  .latest-row-featured .latest-row-arrow { grid-column: 2; }
+  .essay-index-content { min-height: auto; }
+  .article-content p + p::before { left: -10px; }
+  .article-content h2 + p,
+  .article-content h3 + p { padding-left: .8rem; }
+}
+
 /* ===== Homepage clarity pass ===== */
 .site-locale-zh {
   --font-zh-sans: 'Kaiti SC', 'STKaiti', 'KaiTi', 'LXGW WenKai Screen', 'Microsoft YaHei UI', 'PingFang SC', sans-serif;
@@ -1850,4 +2004,30 @@ a, button {
     min-height: auto;
     padding: 20px;
   }
+}
+
+/* Keep the featured image layout after the homepage grid rules above. */
+.latest-row-featured {
+  grid-template-columns: minmax(0, 1.28fr) minmax(230px, .72fr) auto;
+}
+
+.latest-row-featured .latest-row-main { grid-column: 1; }
+
+.latest-row-media {
+  display: block;
+  grid-column: 2;
+  align-self: stretch;
+  min-height: 220px;
+  background: url('/images/inertia-of-fate.jpg') center / cover no-repeat;
+  filter: saturate(.62) contrast(.9) brightness(1.06);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 11%, #000 89%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 11%, #000 89%, transparent 100%);
+}
+
+.latest-row-featured .latest-row-arrow { grid-column: 3; }
+
+@media (max-width: 767px) {
+  .latest-row-featured { grid-template-columns: 1fr auto; }
+  .latest-row-media { display: none; }
+  .latest-row-featured .latest-row-arrow { grid-column: 2; }
 }

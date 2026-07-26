@@ -10,6 +10,8 @@ featured: true
 relatedId: love-seen-clearly
 ---
 
+![A city held in evening light](/images/theme-ordinary-life.jpg)
+
 The Chinese word "ài" (爱) ambiguously conflates two distinct things: inward-reaching, possession-based craving, and outward-giving, compassion-based pure love. In the same Buddhist canon, the Dhammapada says "From love comes grief, from love comes fear," while the Metta Sutta says "As a mother would protect her only child with her life, even so let one cultivate boundless love toward all beings." Love is simultaneously the source of suffering and the path to boundless compassion. This essay is my attempt to dissect this paradox through five modern lenses, then return to the Buddhist center to find a way through.
 
 ## Prelude: Blind Men and a Center

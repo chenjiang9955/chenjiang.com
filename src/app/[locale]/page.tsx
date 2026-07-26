@@ -26,7 +26,7 @@ export default function HomePage({
   return (
     <div className="min-h-screen">
       <HeroSection locale={currentLocale} />
-      <section className="collection-shell topic-entry">
+      <section id="themes" className="collection-shell topic-entry">
         <div className="section-heading">
           <span>{currentLocale === 'zh' ? '按主题进入' : 'BROWSE BY THEME'}</span>
           <span>{currentLocale === 'zh' ? '选择你想读的方向' : 'Choose a path'}</span>

@@ -64,7 +64,7 @@ export default function BlogPostPage({
         <div className="article-layout">
           <TableOfContents content={post.content} locale={currentLocale} />
 
-          <div className="min-w-0 flex-1 article-content">
+          <div className="min-w-0 flex-1 article-content article-reading-panel">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               rehypePlugins={[rehypeSlug]}

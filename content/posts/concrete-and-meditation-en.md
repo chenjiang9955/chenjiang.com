@@ -9,6 +9,8 @@ date: 2026-07-10
 relatedId: concrete-and-meditation
 ---
 
+![Fern leaves in quiet shade](/images/theme-contemplation.jpg)
+
 Twelve years in real estate finance. When collections hit twenty billion, I was staring at spreadsheets. When tax refunds exceeded a hundred million, I was arguing with tax officials. Excel, PowerPoint, financial models—these are the languages I know best.
 
 But there are moments when the numbers stop working.

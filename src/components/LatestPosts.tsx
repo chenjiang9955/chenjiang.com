@@ -43,6 +43,7 @@ export default function LatestPosts({ posts, locale }: { posts: Post[]; locale: 
                 <span>{post.readingTime} {readLabel}</span>
               </div>
             </div>
+            {i === 0 && <span className="latest-row-media" aria-hidden="true" />}
             <span className="latest-row-arrow" aria-hidden="true">→</span>
           </Link>
         ))}

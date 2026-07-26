@@ -9,6 +9,8 @@ date: 2026-07-03
 relatedId: the-thirty-six-year-question
 ---
 
+![Mountain ridges at sunrise](/images/theme-journey.jpg)
+
 At thirty-six, I stepped down from a machine that had been spinning at high speed for twelve years, and suddenly I did not know where to go.
 
 It was not that there were no options. There were many, so many that they made me anxious. The real question was: by what standard should I judge which option was right?

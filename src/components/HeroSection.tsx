@@ -38,8 +38,8 @@ export default function HeroSection({ locale }: { locale: Locale }) {
               ? '这里收着关于佛学、内在观察、情感与旅途的文字。写给自己，也写给同样在觉察的人。'
               : 'Notes on Buddhism, inner observation, love, and the road — written for myself, and for anyone else paying attention.'}
           </p>
-          <Link href="#recent" className="masthead-enter">
-            {isZh ? '最近写的' : 'Recent writing'}
+          <Link href="#themes" className="masthead-enter">
+            {isZh ? '了解主题' : 'Explore themes'}
             <ArrowDown size={15} />
           </Link>
         </div>

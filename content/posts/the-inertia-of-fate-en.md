@@ -9,7 +9,7 @@ date: 2026-07-25
 relatedId: the-inertia-of-fate
 ---
 
-![A fork in a misty road](/images/inertia-of-fate.png)
+![A road leading into the distance](/images/inertia-of-fate.jpg)
 
 Have you ever seen this happen?
 

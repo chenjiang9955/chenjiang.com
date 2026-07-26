@@ -9,6 +9,8 @@ date: 2026-07-03
 relatedId: the-thirty-six-year-question-en
 ---
 
+![日出中的群山](/images/theme-journey.jpg)
+
 三十六岁那年，我从一个高速旋转了十二年的机器上走下来，忽然不知道该往哪里走。
 
 不是没有选项。选项很多，甚至多到让人焦虑。但问题在于：你用什么标准来判断哪个选项是对的？

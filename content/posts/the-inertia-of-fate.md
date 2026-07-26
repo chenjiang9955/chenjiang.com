@@ -9,7 +9,7 @@ date: 2026-07-25
 relatedId: the-inertia-of-fate-en
 ---
 
-![迷雾中的岔路口](/images/inertia-of-fate.png)
+![通往远方的路](/images/inertia-of-fate.jpg)
 
 你有没有过这样的时刻——
 

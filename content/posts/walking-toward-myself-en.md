@@ -9,6 +9,8 @@ date: 2026-07-05
 relatedId: walking-toward-myself
 ---
 
+![Mountain ridges at sunrise](/images/theme-journey.jpg)
+
 Time changes when you travel alone.
 
 In ordinary life, a day is cut into pieces by meetings, spreadsheets, messages, and small obligations. On the road, the day suddenly becomes whole. You do not need to rush between two points. You do not need to handle three things at once. You do not need to be ready to reply "received" at every moment.
