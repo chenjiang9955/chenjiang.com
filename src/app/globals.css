@@ -2298,8 +2298,8 @@ body,
   background-image: var(--section-image);
   background-position: center 54%;
   background-size: cover;
-  filter: saturate(.52) contrast(.86);
-  opacity: .14;
+  filter: saturate(.72) contrast(.92) brightness(.96);
+  opacity: .32;
 }
 
 .section-page-header::after {
