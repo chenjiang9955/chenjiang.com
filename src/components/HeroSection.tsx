@@ -39,7 +39,7 @@ export default function HeroSection({ locale }: { locale: Locale }) {
               : 'Notes on Buddhism, inner observation, love, and the road — written for myself, and for anyone else paying attention.'}
           </p>
           <Link href="#themes" className="masthead-enter">
-            {isZh ? '了解主题' : 'Explore themes'}
+            {isZh ? '了解更多' : 'Explore more'}
             <ArrowDown size={15} />
           </Link>
         </div>

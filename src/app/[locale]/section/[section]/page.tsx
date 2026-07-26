@@ -26,11 +26,11 @@ export default function SectionPage({
   const dateFmt = currentLocale === 'zh' ? 'yyyy年M月d日' : 'MMM d, yyyy'
 
   return (
-    <div className="min-h-screen max-w-3xl mx-auto px-6 py-12">
+    <div className={`section-page section-page-${currentSection}`}>
       {/* Back link */}
       <Link
         href={`/${currentLocale}`}
-        className="inline-flex items-center gap-1.5 text-sm text-neutral-400 hover:text-neutral-600 mb-8 transition-colors"
+        className="section-page-back inline-flex items-center gap-1.5 text-sm text-neutral-400 hover:text-neutral-600 mb-8 transition-colors"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -39,11 +39,11 @@ export default function SectionPage({
       </Link>
 
       {/* Section header */}
-      <div className="mb-12">
-        <h1 className="text-3xl font-semibold text-neutral-900 mb-2">
+      <div className="section-page-header mb-12">
+        <h1 className="section-page-title text-3xl font-semibold text-neutral-900 mb-2">
           {sectionNames[currentSection][currentLocale]}
         </h1>
-        <p className="text-neutral-400">
+        <p className="section-page-description text-neutral-400">
           {sectionDescriptions[currentSection][currentLocale]}
         </p>
       </div>
@@ -56,17 +56,17 @@ export default function SectionPage({
           </p>
         </div>
       ) : (
-        <div className="space-y-0">
+        <div className="section-page-list space-y-0">
           {posts.map((post, index) => (
             <Link
               key={post.slug + post.locale}
               href={`/${post.locale}/blog/${post.slug}`}
-              className="group block py-5 border-b border-neutral-200 last:border-b-0
+              className="section-page-post group block py-5 border-b border-neutral-200 last:border-b-0
                          hover:bg-neutral-50 -mx-3 px-3 rounded transition-colors"
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1 min-w-0">
-                  <span className="text-xs text-neutral-400 mb-1.5 block">
+                  <span className="section-post-date text-xs text-neutral-400 mb-1.5 block">
                     {format(new Date(post.date), dateFmt, { locale: dateLocale })}
                     {post.locale !== currentLocale && (
                       <span className="ml-2">
@@ -75,16 +75,16 @@ export default function SectionPage({
                     )}
                   </span>
 
-                  <h2 className="text-lg font-semibold text-neutral-900 mb-1.5
+                  <h2 className="section-post-title text-lg font-semibold text-neutral-900 mb-1.5
                                  group-hover:text-accent-600 transition-colors">
                     {post.title}
                   </h2>
 
-                  <p className="text-sm text-neutral-500 leading-relaxed line-clamp-2 mb-2">
+                  <p className="section-post-excerpt text-sm text-neutral-500 leading-relaxed line-clamp-2 mb-2">
                     {post.excerpt}
                   </p>
 
-                  <div className="flex items-center gap-3 text-xs text-neutral-400">
+                  <div className="section-post-meta flex items-center gap-3 text-xs text-neutral-400">
                     <span>{post.readingTime}{currentLocale === 'zh' ? '分钟阅读' : 'min read'}</span>
                     {post.tags.slice(0, 3).map(tag => (
                       <span key={tag}>#{tag}</span>
@@ -92,7 +92,7 @@ export default function SectionPage({
                   </div>
                 </div>
 
-                <div className="flex-shrink-0 mt-1.5 text-neutral-300 group-hover:text-accent-400 transition-colors">
+                <div className="section-post-arrow flex-shrink-0 mt-1.5 text-neutral-300 group-hover:text-accent-400 transition-colors">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
                   </svg>
@@ -104,7 +104,7 @@ export default function SectionPage({
       )}
 
       {posts.length > 0 && (
-        <p className="text-center text-xs text-neutral-400 mt-10">
+        <p className="section-page-count text-center text-xs text-neutral-400 mt-10">
           {currentLocale === 'zh'
             ? `共 ${posts.length} 篇文章`
             : `${posts.length} post${posts.length > 1 ? 's' : ''}`}
