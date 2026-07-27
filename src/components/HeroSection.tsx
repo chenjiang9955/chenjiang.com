@@ -17,26 +17,26 @@ export default function HeroSection({ locale }: { locale: Locale }) {
         <div className="masthead-main">
           <p className="masthead-lead">
             {isZh
-              ? '在念头起落之间，我学着把看见的写下来。'
-              : 'Between arising and passing thoughts, I try to write what I see.'}
+              ? '培养一种不被即时刺激支配的生命节奏。'
+              : 'Cultivating a life rhythm less ruled by instant stimulation.'}
           </p>
           <h1 className="masthead-title">
             {isZh ? (
               <>
-                不忙着回答，<br />
-                只练习看得更清一点。
+                在忙碌、比较与欲望之间，<br />
+                练习看见现实，也看见自己对现实的感受。
               </>
             ) : (
               <>
-                Not in a hurry to answer —<br />
-                only to see a little more clearly.
+                Amid busyness, comparison, and desire,<br />
+                I practice seeing what is real, and what I feel about it.
               </>
             )}
           </h1>
           <p className="masthead-note">
             {isZh
-              ? '这里收着关于佛学、内在观察、情感与旅途的文字。写给自己，也写给同样在觉察的人。'
-              : 'Notes on Buddhism, inner observation, love, and the road — written for myself, and for anyone else paying attention.'}
+              ? '这里记录我的旅行、读书、观心与日常思考：在被催促的时代，慢慢安顿自己的心。'
+              : 'Here I write about travel, books, watching the mind, and everyday thoughts: learning to live a little more steadily in an age that keeps rushing us along.'}
           </p>
           <Link href="#themes" className="masthead-enter">
             {isZh ? '了解更多' : 'Explore more'}
