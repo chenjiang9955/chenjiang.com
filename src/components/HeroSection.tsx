@@ -24,7 +24,7 @@ export default function HeroSection({ locale }: { locale: Locale }) {
             {isZh ? (
               <>
                 在忙碌、比较与欲望之间，<br />
-                练习看见现实，也看见自己对现实的感受。
+                慢慢看清现实，也照见自己的感受。
               </>
             ) : (
               <>
