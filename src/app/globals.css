@@ -2474,3 +2474,68 @@ body,
   .site-locale-zh .plain-about-body p { font-size: 1.04rem; line-height: 1.95; }
   .site-locale-zh .bookshelf { padding: 42px 0 54px; }
 }
+
+/* ===== Homepage hero copy rhythm ===== */
+.masthead-title-line {
+  display: block;
+}
+
+.site-locale-zh .masthead-main {
+  max-width: 860px;
+}
+
+.site-locale-zh .masthead-title {
+  max-width: 860px;
+  font-family: var(--font-zh-sans) !important;
+  font-size: clamp(2.35rem, 3.35vw, 2.85rem);
+  font-weight: 700 !important;
+  line-height: 1.28;
+  letter-spacing: 0 !important;
+}
+
+.site-locale-zh .masthead-title-line {
+  white-space: nowrap;
+}
+
+.site-locale-en .masthead-main {
+  max-width: 760px;
+}
+
+.site-locale-en .masthead-title {
+  max-width: 720px;
+  font-size: clamp(2rem, 2.7vw, 2.55rem);
+  font-weight: 500;
+  line-height: 1.27;
+  letter-spacing: 0;
+}
+
+.site-locale-en .masthead-title-line + .masthead-title-line {
+  margin-top: .1em;
+}
+
+@media (max-width: 767px) {
+  .site-locale-zh .masthead-main,
+  .site-locale-en .masthead-main {
+    max-width: none;
+  }
+
+  .site-locale-zh .masthead-title,
+  .site-locale-en .masthead-title {
+    max-width: 100%;
+  }
+
+  .site-locale-zh .masthead-title {
+    font-size: clamp(2rem, 7.7vw, 2.55rem);
+    line-height: 1.34;
+  }
+
+  .site-locale-en .masthead-title {
+    font-size: clamp(1.85rem, 7vw, 2.35rem);
+    line-height: 1.25;
+  }
+
+  .site-locale-zh .masthead-title-line,
+  .site-locale-en .masthead-title-line {
+    white-space: normal;
+  }
+}

@@ -23,13 +23,14 @@ export default function HeroSection({ locale }: { locale: Locale }) {
           <h1 className="masthead-title">
             {isZh ? (
               <>
-                在忙碌、比较与欲望之间，<br />
-                慢慢看清现实，也照见自己的感受。
+                <span className="masthead-title-line">在忙碌、比较与欲望之间，</span>
+                <span className="masthead-title-line">学会看清现实，也照见自己的感受。</span>
               </>
             ) : (
               <>
-                Amid busyness, comparison, and desire,<br />
-                I practice seeing what is real, and what I feel about it.
+                <span className="masthead-title-line">Amid busyness, comparison, and desire,</span>
+                <span className="masthead-title-line">I learn to see reality clearly,</span>
+                <span className="masthead-title-line">and to notice what I feel.</span>
               </>
             )}
           </h1>
