@@ -2,7 +2,7 @@
 slug: when-morality-ran-an-empire-en
 locale: en
 title: When an Empire Spoke Only in Morality, Why Did It Stop Getting Things Done?
-excerpt: Rereading The Year of Wanli, I keep returning not to the success or failure of six people, but to the civil bureaucracy they shared: a system that once used moral language to hold order together, and later used it to cover problems in finance, justice, land, and war that it could no longer handle.
+excerpt: "Rereading The Year of Wanli, I keep returning not to the success or failure of six people, but to the civil bureaucracy they shared: a system that once used moral language to hold order together, and later used it to cover problems in finance, justice, land, and war that it could no longer handle."
 category: inner-observation
 tags: [The Year of Wanli, Huang Renyu, Ming dynasty, civil bureaucracy, morality, history]
 date: 2026-08-07
