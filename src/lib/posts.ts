@@ -8,6 +8,7 @@ export interface PostFrontmatter {
   slug: string
   locale: 'zh' | 'en'
   title: string
+  subtitle?: string
   excerpt: string
   coverImage?: string
   category: string
@@ -45,6 +46,7 @@ export const getAllPosts = cache((): Post[] => {
       slug: data.slug || file.replace('.md', ''),
       locale: data.locale || 'zh',
       title: data.title || '',
+      subtitle: data.subtitle || undefined,
       excerpt: data.excerpt || '',
       coverImage: data.coverImage || undefined,
       category: data.category || 'personal-growth',

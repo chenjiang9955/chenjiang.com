@@ -43,7 +43,15 @@ export default function LatestPosts({ posts, locale }: { posts: Post[]; locale: 
                 <span>{post.readingTime} {readLabel}</span>
               </div>
             </div>
-            {i === 0 && <span className="latest-row-media" aria-hidden="true" />}
+            {i === 0 && (
+              <span
+                className="latest-row-media"
+                aria-hidden="true"
+                style={{
+                  backgroundImage: `url(${post.coverImage || '/images/inertia-of-fate.jpg'})`,
+                }}
+              />
+            )}
             <span className="latest-row-arrow" aria-hidden="true">→</span>
           </Link>
         ))}

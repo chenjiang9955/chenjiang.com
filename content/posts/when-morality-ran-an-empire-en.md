@@ -1,13 +1,17 @@
 ---
 slug: when-morality-ran-an-empire-en
 locale: en
-title: When an Empire Spoke Only in Morality, Why Did It Stop Getting Things Done?
-excerpt: "Rereading The Year of Wanli, I keep returning not to the success or failure of six people, but to the civil bureaucracy they shared: a system that once used moral language to hold order together, and later used it to cover problems in finance, justice, land, and war that it could no longer handle."
+title: When Morality Became a System
+subtitle: Rereading The Year of Wanli Through Civil Bureaucracy and Imperial Governance
+excerpt: "Rereading The Year of Wanli, I return not to the success or failure of six people, but to the bureaucracy they shared: when morality became an instrument of governance, it began to cover problems in finance, justice, land, and war that it could no longer handle."
+coverImage: /images/wanli-city-gate.png
 category: inner-observation
 tags: [The Year of Wanli, Huang Renyu, Ming dynasty, civil bureaucracy, morality, history]
 date: 2026-08-07
 relatedId: when-morality-ran-an-empire
 ---
+
+![A Ming-style city gate in the mist](/images/wanli-city-gate.png)
 
 *Reading The Year of Wanli as the story of a bureaucracy that gradually exhausted both morality and its own capacity to govern.*
 
@@ -21,9 +25,13 @@ The government had little organizational capacity to investigate such facts. It 
 
 Who appeared more dutiful? Who had a reputation for filial conduct? Whose claim might disturb village peace? Who ought to yield? Such judgments could sometimes stop a quarrel, but they could not replace the work of establishing facts. Morality ceased to be only a boundary. It became an instrument of adjudication.
 
-This is the strongest impression I take from rereading *The Year of Wanli*: the Ming problem was not that no one cared about morality. It was that morality was asked to do too much work that should have been done by institutions, techniques, and administrative capacity. Morality was raised very high, used too often, and damaged in both directions.
+**This is the strongest impression I take from rereading *The Year of Wanli*: the Ming problem was not that no one cared about morality. It was that morality was asked to do too much work that should have been done by institutions, techniques, and administrative capacity. Morality was raised very high, used too often, and damaged in both directions.**
 
-The *Dao De Jing* says: “When the great Way is abandoned, benevolence and righteousness appear; when cleverness arises, great falseness follows.” Read here, this does not mean benevolence itself is false. It suggests something else: when a society must use dense moral language to fill the gaps of governance, morality is drawn into endless concrete interests. Facts that need to be clarified become judgments of character; institutions that need adjustment become contests between loyalty and treachery.
+> “When the great Way is abandoned, benevolence and righteousness appear; when cleverness arises, great falseness follows.”
+>
+> — *Dao De Jing*
+
+Read here, this does not mean benevolence itself is false. It suggests something else: when a society must use dense moral language to fill the gaps of governance, morality is drawn into endless concrete interests. Facts that need to be clarified become judgments of character; institutions that need adjustment become contests between loyalty and treachery.
 
 ## How Far Could This System Actually Govern?
 
@@ -37,7 +45,7 @@ Shared belief did not erase interests. It became entangled with networks of nati
 
 Its deeper limitation was the narrowness of its actual reach into society. In a country where more than 90 percent of the population farmed and many could not read, central documents truly reached mainly literati, officials, and local gentry. Much of village life was governed through elders, lineages, local notables, and abstract moral principles. Finance, currency, land, justice, and the military all lacked the technical and organizational conditions for fine-grained management.
 
-The purpose of this system was never chiefly to raise welfare, make the country wealthy and militarily powerful, or expand national capacity. It sought to preserve social stability and the continuity of rule on the lowest material foundation possible. A good year did not have to make everyone well-fed; a bad year merely had to avoid masses dying in the ditches. Holding that line was already treated as success.
+**The purpose of this system was never chiefly to raise welfare, make the country wealthy and militarily powerful, or expand national capacity. It sought to preserve social stability and the continuity of rule on the lowest material foundation possible. A good year did not have to make everyone well-fed; a bad year merely had to avoid masses dying in the ditches. Holding that line was already treated as success.**
 
 This goal left little impulse for outward expansion, horizontal development, or self-renewal. The institutional form gradually hardened, while competition for office, prestige, interest, and power grew more intense within it. The civil bureaucracy had once supported economic and social recovery. Later, it increasingly resembled a difficult powder keg.
 
@@ -53,7 +61,7 @@ Yet in an environment with weak institutions and weak technical capacity, the me
 
 The problem lay precisely there. An appointment did not affect only one post; it disturbed a field of interests and relationships. The more Zhang tried to push reform, the harder it became to avoid breaking the existing balance within the bureaucracy. Once that balance was disturbed, political conflict could quickly be translated into moral accusation. His opponents were not necessarily defending principle alone; they had interests of their own. Zhang’s luxury, conduct, and use of personnel therefore became entry points for a wider reckoning with his reforms.
 
-The result was a cycle that was difficult to escape: when institutions and techniques are insufficient, reform relies on personal authority; personal authority works through appointments; appointments disturb group balances; the group’s backlash returns in the language of morality; the reformer and the reform are then struck together.
+**The result was a cycle that was difficult to escape: when institutions and techniques are insufficient, reform relies on personal authority; personal authority works through appointments; appointments disturb group balances; the group’s backlash returns in the language of morality; the reformer and the reform are then struck together.**
 
 Zhang died too early for many of his arrangements to become something more durable than his own authority. His ending does not erase what his reforms achieved. It shows how hard it was, in that system, to separate the fate of a reform from the fate of the person carrying it.
 
@@ -85,7 +93,7 @@ Hai Rui could remain honest and judge cases with a personal sense of fairness. Y
 
 Qi Jiguang stood at the other end of the military system. He did not pursue an ideal detached from reality. Within what reality allowed, he trained troops, improved tactics, and organized coordination, making compromise with the environment part of the cost of realizing his aims. Yet the selection and appointment of commanders, weapons production, logistics, and the division of command were all constrained by the civil bureaucracy and local administration. Technique had no natural space in which to unfold.
 
-Qi’s success therefore depended heavily on political protection. When Zhang Juzheng died and that protection vanished, military achievement alone could not easily withstand the backlash. The book presents a hard proposition: instead of advanced technique overcoming a backward organization, a backward but tightly organized system can restrain advanced technique. Under Ming conditions, the latter prevailed.
+Qi’s success therefore depended heavily on political protection. When Zhang Juzheng died and that protection vanished, military achievement alone could not easily withstand the backlash. **The book presents a hard proposition: instead of advanced technique overcoming a backward organization, a backward but tightly organized system can restrain advanced technique.** Under Ming conditions, the latter prevailed.
 
 ## Li Zhi: A Crack in the Inner World of the Literati
 
@@ -103,12 +111,16 @@ That contradiction does not weaken his value. It makes visible a widespread and 
 
 As population, wealth, land relations, and fiscal and military affairs became more complex, the methods that had once sustained order also became obstacles to further development. The system had once gathered consensus; later it excluded difference. It had once mediated conflict; later it concealed conflict. It had once used morality to fill administrative gaps; later it asked morality to bear the weight of technique, institutions, and fact.
 
-“To hold and fill it is not as good as to stop.” The more mature an institution becomes, the more likely it is to form its own inertia. It does not suddenly become corrupt on one particular day. Many people may still sincerely defend the order as they understand it. Yet when everyone is doing their best within old rules, the old rules themselves may no longer be able to meet reality.
+> “To hold and fill it is not as good as to stop.”
+>
+> — *Dao De Jing*
+
+The more mature an institution becomes, the more likely it is to form its own inertia. It does not suddenly become corrupt on one particular day. Many people may still sincerely defend the order as they understand it. Yet when everyone is doing their best within old rules, the old rules themselves may no longer be able to meet reality.
 
 There is value in studying such a process of decline. We live in a world community still being reshaped by rapid technological development and multiple civilizational paths. To observe how an earlier civilization formed, matured, and gradually lost vitality inside its own inertia is not to look for a ready-made plan for the present. It is to gain a different feeling for civilization, institutions, and the human condition.
 
 This is what moves me most in Huang Renyu’s “macro-history.” When the scale of time is widened, many matters that seem to concern only character, morality, or individual choice reveal an organizational and institutional background. When the field of vision is widened, conflicts described as moral conflicts also reveal fiscal, technical, and social-structural causes.
 
-Morality remains morality, and individuals remain responsible for their choices. But morality cannot replace technique, and personal character cannot by itself explain how an organization or a society functions. To distinguish moral questions from technical and institutional ones, and personal questions from organizational and social ones, seems closer to what *The Year of Wanli* leaves with me than any easy assignment of historical good and evil.
+**Morality remains morality, and individuals remain responsible for their choices. But morality cannot replace technique, and personal character cannot by itself explain how an organization or a society functions.** To distinguish moral questions from technical and institutional ones, and personal questions from organizational and social ones, seems closer to what *The Year of Wanli* leaves with me than any easy assignment of historical good and evil.
 
 History may not answer for those who come after it. Perhaps its more important work is to make some answers that are too easy, too certain, slowly stop working.

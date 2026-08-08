@@ -6,8 +6,19 @@ import { format } from 'date-fns'
 import { zhCN, enUS } from 'date-fns/locale'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import rehypeSlug from 'rehype-slug'
 import TableOfContents from '@/components/TableOfContents'
+import { slugifyHeading } from '@/lib/headings'
+import { Children, isValidElement, type ReactNode } from 'react'
+
+function headingText(children: ReactNode): string {
+  return Children.toArray(children)
+    .map((child) => {
+      if (typeof child === 'string' || typeof child === 'number') return String(child)
+      if (isValidElement<{ children?: ReactNode }>(child)) return headingText(child.props.children)
+      return ''
+    })
+    .join('')
+}
 
 export function generateStaticParams() {
   const posts = getAllPosts()
@@ -32,16 +43,19 @@ export default function BlogPostPage({
   const relatedPost = getRelatedPost(post)
   const dateLocale = currentLocale === 'zh' ? zhCN : enUS
   const dateFmt = currentLocale === 'zh' ? 'yyyy年M月d日' : 'MMM d, yyyy'
+  const isWanliEssay = post.slug === 'when-morality-ran-an-empire' || post.slug === 'when-morality-ran-an-empire-en'
 
   return (
     <div className="min-h-screen">
-      <article className="article-shell max-w-5xl mx-auto px-6 py-12">
+      <article className={`article-shell max-w-5xl mx-auto px-6 py-12 ${isWanliEssay ? 'article--wanli' : ''}`}>
         <header className="article-header">
           <Link href={`/${currentLocale}`} className="article-back">
             ← {currentLocale === 'zh' ? '内在漫游' : 'Inner Wandering'}
           </Link>
 
           <h1>{post.title}</h1>
+
+          {post.subtitle && <p className="article-lead">{post.subtitle}</p>}
 
           <div className="article-properties">
             <Link
@@ -67,7 +81,18 @@ export default function BlogPostPage({
           <div className="min-w-0 flex-1 article-content article-reading-panel">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeSlug]}
+              components={{
+                h2: ({ children, node: _node, ...props }) => (
+                  <h2 {...props} id={slugifyHeading(headingText(children))}>
+                    {children}
+                  </h2>
+                ),
+                h3: ({ children, node: _node, ...props }) => (
+                  <h3 {...props} id={slugifyHeading(headingText(children))}>
+                    {children}
+                  </h3>
+                ),
+              }}
             >
               {post.content}
             </ReactMarkdown>

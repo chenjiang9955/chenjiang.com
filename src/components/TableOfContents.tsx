@@ -1,12 +1,7 @@
 'use client'
 
 import { useEffect, useState, useCallback } from 'react'
-
-interface TocItem {
-  id: string
-  text: string
-  level: number
-}
+import { extractHeadings, type HeadingItem } from '@/lib/headings'
 
 interface Props {
   content: string
@@ -14,28 +9,13 @@ interface Props {
 }
 
 export default function TableOfContents({ content, locale }: Props) {
-  const [headings, setHeadings] = useState<TocItem[]>([])
+  const [headings, setHeadings] = useState<HeadingItem[]>([])
   const [activeId, setActiveId] = useState<string>('')
   const [mobileOpen, setMobileOpen] = useState(false)
 
   // Extract headings from markdown content
   useEffect(() => {
-    const regex = /^(#{2,3})\s+(.+)$/gm
-    const items: TocItem[] = []
-    let match: RegExpExecArray | null
-
-    while ((match = regex.exec(content)) !== null) {
-      const level = match[1].length // 2 for ##, 3 for ###
-      const text = match[2].trim()
-      // Generate ID matching rehype-slug behavior
-      const id = text
-        .toLowerCase()
-        .replace(/[^a-z0-9\u4e00-\u9fff]+/g, '-')
-        .replace(/^-+|-+$/g, '')
-      items.push({ id, text, level })
-    }
-
-    setHeadings(items)
+    setHeadings(extractHeadings(content))
   }, [content])
 
   // Track active heading with IntersectionObserver
@@ -72,6 +52,7 @@ export default function TableOfContents({ content, locale }: Props) {
     const el = document.getElementById(id)
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      window.history.replaceState(null, '', `#${id}`)
       setActiveId(id)
       setMobileOpen(false)
     }
@@ -91,15 +72,20 @@ export default function TableOfContents({ content, locale }: Props) {
           </h4>
           <nav>
             {headings.map((h) => (
-              <button
+              <a
                 key={h.id}
-                onClick={() => scrollToHeading(h.id)}
+                href={`#${h.id}`}
+                onClick={(event) => {
+                  event.preventDefault()
+                  scrollToHeading(h.id)
+                }}
                 className={`toc-link ${h.level === 3 ? 'toc-h3' : ''} ${
                   activeId === h.id ? 'active' : ''
                 }`}
+                aria-current={activeId === h.id ? 'location' : undefined}
               >
                 {h.text}
-              </button>
+              </a>
             ))}
           </nav>
         </div>
@@ -122,15 +108,20 @@ export default function TableOfContents({ content, locale }: Props) {
         {mobileOpen && (
           <nav className="toc-mobile-panel">
             {headings.map((h) => (
-              <button
+              <a
                 key={h.id}
-                onClick={() => scrollToHeading(h.id)}
+                href={`#${h.id}`}
+                onClick={(event) => {
+                  event.preventDefault()
+                  scrollToHeading(h.id)
+                }}
                 className={`toc-link w-full text-left ${h.level === 3 ? 'toc-h3' : ''} ${
                   activeId === h.id ? 'active' : ''
                 }`}
+                aria-current={activeId === h.id ? 'location' : undefined}
               >
                 {h.text}
-              </button>
+              </a>
             ))}
           </nav>
         )}
