@@ -61,7 +61,7 @@ Once he acquired power, improving his family’s life, caring for relatives, and
 
 Beyond individual interests, the bureaucracy was tied together by complicated networks of examination cohorts, native places, teachers and students, and marriage. To offend one person could mean offending the people behind him; one personnel adjustment could unsettle an extensive web of interests. Everyone spoke of loyalty, honor, and the public good. Everyone also calculated position, prospects, and family.
 
-The civil bureaucracy was not a simply hypocritical group, but a more complex compound: it contained the upward force of shared belief and the fractures created by private interests; it required cooperation while constantly producing mutual restraint. Beneath a coarse moral exterior, it maintained a fragile and temporary balance.
+The civil bureaucracy was not a simply hypocritical group, but a more complex compound: it contained the upward force of shared belief and the fractures created by private interests; it required cooperation while constantly producing mutual restraint. **Beneath a coarse moral exterior, it maintained a fragile and temporary balance.**
 
 ## How Far Could This System Actually Govern?
 
@@ -69,7 +69,7 @@ That balance did not give the empire a truly detailed capacity to govern.
 
 The center seemed to hold everything, but its ability to reach deeply into local society was limited. Many village affairs still depended on gentry, elders, and local relationships. In civil disputes, the government lacked adequate procedures for investigation, evidence, and defense; in assessing officials, it lacked a stable and detailed standard of performance, often looking only at whether taxes arrived and whether disorder broke out.
 
-The governing aim of the civil service was limited as well. Its first purpose was never the sustained improvement of people’s material welfare, nor wealth and military strength, nor an expanding national capacity in finance, commerce, and war. It sought to keep society stable at a minimum material level and thereby allow dynastic rule to continue.
+The governing aim of the civil service was limited as well. Its first purpose was never the sustained improvement of people’s material welfare, nor wealth and military strength, nor an expanding national capacity in finance, commerce, and war. **It sought to keep society stable at a minimum material level and thereby allow dynastic rule to continue.**
 
 To use the language of my original notes: a good year did not need to make everyone full; a bad year only had to avoid large numbers “filling the ditches.” That was already the standard of success. Such a system did not treat continuous development or outward expansion as its main purpose. Over time its form hardened: room for external and horizontal growth narrowed, while struggle over office, reputation, interest, and power became more intense within.
 
@@ -79,7 +79,7 @@ Currency, lending, and land were intertwined. Commercial rules were unstable; hi
 
 In military affairs, the limits of this way of governing became even clearer. Generals were constrained by civil officials and provincial governors. Logistics depended on scattered local finance; weapons production lacked a unified system; military command was divided. The empire did not entirely lack troops, arms, or able commanders. It lacked the capacity to organize those forces continuously.
 
-The state created the civil bureaucracy to solve problems, yet in the end many problems had their roots in the bureaucracy as well. It connected center and locality, yet also limited both. It used morality to sustain order, yet consumed morality in political struggle. It helped society recover early in the dynasty, and later found itself increasingly unable to govern an empire that had grown more complex.
+**The state created the civil bureaucracy to solve problems, yet in the end many problems had their roots in the bureaucracy as well. It connected center and locality, yet also limited both. It used morality to sustain order, yet consumed morality in political struggle. It helped society recover early in the dynasty, and later found itself increasingly unable to govern an empire that had grown more complex.**
 
 This was the world shared by Zhang Juzheng, Shen Shixing, the Wanli Emperor, Hai Rui, Qi Jiguang, and Li Zhi. They are not simply separate biographies. Each occupied a different position in the same net, chose a different response, and was pulled back by it.
 
@@ -127,7 +127,7 @@ This was not without value.
 
 The bureaucracy could still hold together not only because of power, but because its members shared a classical education and moral faith. Shen tried to summon those common elements again, allowing divided officials to continue working in the same language. In the fiercely reactive politics after Zhang’s death, this moderation did have a buffering effect.
 
-But it could only wrap the contradictions again; it could not remove their source.
+**But it could only wrap the contradictions again; it could not remove their source.**
 
 Factional relations did not change. Conflicts over personnel and interests remained, and fiscal, judicial, and local governing capacity were not fundamentally improved. Everyone continued to pursue practical interests beneath moral language. So long as the balance was not openly broken, the surface could remain calm; when a new political event occurred, the old contradictions appeared again.
 
@@ -143,7 +143,7 @@ Early in his reign, he was not uninterested in affairs from the beginning. He wa
 
 The emperor possessed supreme power in name, while the daily operators of imperial politics were civil officials. They needed the emperor to perform ritual and symbolic functions, to serve as the highest representative of moral order, but they did not want his personal will to enter practical politics too deeply.
 
-In the book’s phrase, they needed “a living ancestor.”
+In the book’s phrase, they needed *“a living ancestor.”*
 
 The emperor could sacrifice to Heaven, plow ceremonially, receive his ministers’ homage, and become the symbol of political order. But when he tried to act according to his own will in succession, personnel, or government, he faced strong constraints from the bureaucracy. He appeared supreme, but possessed little room to exercise individual character or political ability freely.
 
@@ -153,11 +153,11 @@ The emperor had few instruments with which to move the bureaucracy. Besides appo
 
 By delaying appointments, reducing participation, and refusing cooperation over a long period, Wanli effectively cut off the bureaucracy’s paths of promotion and positive incentive. The side of the civil system that once possessed a capacity to inspire was gradually weakened; the factional and interest conflicts accumulated inside it did not disappear.
 
-Those conflicts were shut into an environment with no outlet and could only tear at one another more fiercely. What Shen Shixing feared—rupture above and below, estrangement at the center and in the provinces—gradually became reality.
+Those conflicts were shut into an environment with no outlet and could only tear at one another more fiercely. What Shen Shixing feared—*rupture above and below, estrangement at the center and in the provinces*—gradually became reality.
 
 Wanli’s refusal to cooperate did not destroy the bureaucracy, but it left it increasingly without a common direction. He expressed his will through inaction; the bureaucracy continued to divide without imperial adjustment or incentive. Neither emperor nor ministers became victors.
 
-Zhang broke the balance by force, Shen preserved it through moderation, and Wanli withdrew his support for it. They used three utterly different methods, yet none found a road outside the civil bureaucracy.
+Zhang broke the balance by force, Shen preserved it through moderation, and Wanli withdrew his support for it. **They used three utterly different methods, yet none found a road outside the civil bureaucracy.**
 
 This was not because the three men made the same mistake. The tools available to them had been produced inside the system itself. Reform, mediation, and refusal to cooperate could only occur inside the range that system had drawn.
 
@@ -253,7 +253,7 @@ But his success also depended heavily on a particular political environment. He 
 
 When Zhang died and was purged, Qi immediately lost his most important protection. The political relationships that had enabled his talent also became the source of backlash when they changed.
 
-This does not make his past military achievements false. It shows that professional ability could not acquire an independent status in this system. Military technique had to depend on political protection in order to exist; once that protection disappeared, technique and merit were not enough to secure a general’s position.
+This does not make his past military achievements false. It shows that professional ability could not acquire an independent status in this system. **Military technique had to depend on political protection in order to exist; once that protection disappeared, technique and merit were not enough to secure a general’s position.**
 
 ### Flaws in Conduct and the Wholeness of a Historical Figure
 
@@ -333,7 +333,7 @@ But an institution’s function is never fixed.
 
 As population grew, land relations became complex, and fiscal and military affairs expanded, problems that could once be managed through moral consensus and interpersonal adjustment began to require professional techniques, precise institutions, and stronger organizational capacities. The bureaucracy, however, had already become tightly bound to the old political structure. It had once filled institutional gaps; later it began to prevent those gaps from being replaced by genuine institution-building.
 
-It preserved order while excluding change; mediated contradictions while concealing them; used morality to maintain a common language in the bureaucracy while continually translating fiscal, military, and judicial questions into questions of character. In the end, the forces on which the civil system had succeeded became the forces that limited its further development.
+**It preserved order while excluding change; mediated contradictions while concealing them; used morality to maintain a common language in the bureaucracy while continually translating fiscal, military, and judicial questions into questions of character. In the end, the forces on which the civil system had succeeded became the forces that limited its further development.**
 
 The *Dao De Jing* says:
 

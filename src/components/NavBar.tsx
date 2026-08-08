@@ -12,6 +12,17 @@ export default function NavBar() {
   const [searchOpen, setSearchOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
+  const localeTarget = (() => {
+    const articleMatch = pathname.match(/^\/(zh|en)\/blog\/([^/]+)$/)
+    if (articleMatch) {
+      const [, articleLocale, slug] = articleMatch
+      const translatedSlug = articleLocale === 'zh' ? `${slug}-en` : slug.replace(/-en$/, '')
+      const translatedLocale = articleLocale === 'zh' ? 'en' : 'zh'
+      return `/${translatedLocale}/blog/${translatedSlug}`
+    }
+
+    return pathname.replace(/^\/(zh|en)/, currentLocale === 'zh' ? '/en' : '/zh')
+  })()
 
   const t = {
     home: currentLocale === 'zh' ? '首页' : 'Home',
@@ -70,7 +81,7 @@ export default function NavBar() {
 
           {/* Language toggle — plain text, no pill */}
           <Link
-            href={pathname.replace(/^\/(zh|en)/, currentLocale === 'zh' ? '/en' : '/zh')}
+            href={localeTarget}
             className="text-xs font-medium text-neutral-400 hover:text-accent-500 transition-colors tracking-wide"
           >
             {currentLocale === 'zh' ? 'EN' : '中文'}
@@ -136,7 +147,7 @@ export default function NavBar() {
               {t.about}
             </Link>
             <Link
-              href={pathname.replace(/^\/(zh|en)/, currentLocale === 'zh' ? '/en' : '/zh')}
+              href={localeTarget}
               onClick={() => setMobileOpen(false)}
               className="text-sm text-neutral-500"
             >

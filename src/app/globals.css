@@ -2636,11 +2636,11 @@ body,
   background: linear-gradient(90deg, rgba(184,77,50,.09), rgba(184,77,50,0));
   color: #67463a;
   font-size: 1.09em;
-  font-style: normal;
+  font-style: italic;
 }
 
 .site-locale-zh .article--wanli .article-content blockquote {
-  font-family: var(--font-zh-reading);
+  font-family: 'Kaiti SC', 'STKaiti', 'KaiTi', var(--font-zh-reading);
   letter-spacing: .03em;
 }
 
@@ -2657,9 +2657,9 @@ body,
 }
 
 .article--wanli .article-content strong {
-  color: #1c1f1b;
+  color: inherit;
   font-weight: 700;
-  background: linear-gradient(transparent 68%, rgba(184,77,50,.15) 0);
+  background: transparent;
 }
 
 .article--wanli .toc-link {
