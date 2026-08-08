@@ -2636,11 +2636,11 @@ body,
   background: linear-gradient(90deg, rgba(184,77,50,.09), rgba(184,77,50,0));
   color: #67463a;
   font-size: 1.09em;
-  font-style: italic;
+  font-style: normal;
 }
 
 .site-locale-zh .article--wanli .article-content blockquote {
-  font-family: 'Kaiti SC', 'STKaiti', 'KaiTi', var(--font-zh-reading);
+  font-family: var(--font-zh-reading);
   letter-spacing: .03em;
 }
 
